@@ -1,0 +1,17 @@
+# Core dependencies
+torch>=1.12.0
+numpy>=1.22.0
+scipy>=1.9.0
+matplotlib>=3.5.0
+Pillow>=9.0.0
+nibabel>=4.0.0
+pyyaml>=6.0
+
+# SAM (install manually from source):
+# pip install git+https://github.com/facebookresearch/segment-anything.git
+
+# SAM 2 (install manually from source):
+# pip install git+https://github.com/facebookresearch/sam2.git
+
+# MedSAM checkpoint download:
+# https://drive.google.com/drive/folders/1ETWmi4AiniJeWOt6HAsYgTjYv_fkgzoN

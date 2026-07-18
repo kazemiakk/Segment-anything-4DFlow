@@ -1,0 +1,23 @@
+# Models
+sam_vit_h:
+  checkpoint: "./checkpoints/sam_vit_h_4b8939.pth"
+  model_type: "vit_h"
+
+medsam:
+  checkpoint: "./checkpoints/medsam_vit_b.pth"
+  model_type: "vit_b"
+
+sam2_large:
+  checkpoint: "./checkpoints/sam2_hiera_large.pt"
+  model_cfg:  "sam2_hiera_l"
+
+# Segmentation settings
+segmentation:
+  prompt_slice: 5          # default Z-slice for SAM 2 prompt
+  prompt_mode: "bbox"      # "bbox" | "point" | "auto"
+  refine: true             # apply post-processing
+  alpha_overlay: 0.4       # visualisation overlay transparency
+
+# Evaluation
+evaluation:
+  voxel_size_mm: 1.5       # isotropic voxel spacing (mm)
